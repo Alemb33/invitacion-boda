@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f1e8"><meta name="description" content="Invitación a la boda de Ricardo y Ana Lilia, 19 de diciembre de 2026.">
+  <title>Ricardo & Ana Lilia | Nuestra boda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script defer src="script.js"></script>
+</head>
+<body class="locked">
+  <div class="opening" id="opening" aria-label="Abrir invitación">
+    <div class="opening-inner"><p class="eyebrow">TENEMOS EL HONOR DE INVITARTE</p><h1>Ricardo <span>&</span> Ana Lilia</h1>
+      <button id="openInvitation" class="envelope-button" aria-label="Abrir el sobre y la invitación">
+        <span class="envelope" aria-hidden="true"><span class="env-back"></span><span class="env-letter">Nuestra boda<br><small>19 · 12 · 2026</small></span><span class="env-flap"></span><span class="env-front"></span><span class="seal">R <small>&</small> A</span></span>
+      </button><p class="hint">Toca el sello para abrir la invitación</p><p class="tiny">Al abrir el sobre, comenzará nuestra melodía.</p>
+    </div>
+  </div>
+  <div id="floatingHearts" class="floating-hearts" aria-hidden="true"></div>
+  <button class="music-toggle" id="musicToggle" aria-label="Activar o pausar música" aria-pressed="false" hidden>♫ <span id="musicLabel">Música</span></button>
+  <audio id="backgroundMusic" src="musica/cancion.mp3" loop preload="auto"></audio>
+  <main id="mainContent">
+    <header class="hero" id="inicio"><div class="hero-shade"></div><div class="hero-content reveal"><p class="eyebrow light">CON LA BENDICIÓN DE DIOS Y EL AMOR DE NUESTRAS FAMILIAS</p><div class="ornament">✦</div><h2>Ricardo <em>&</em><br>Ana Lilia</h2><p class="hero-subtitle">¡Nos casamos!</p><div class="gold-rule"></div><p class="hero-date">SÁBADO · 19 DE DICIEMBRE · 2026</p><a class="scroll-cue" href="#historia">DESLIZA PARA DESCUBRIR <span>↓</span></a></div></header>
+    <section class="section intro" id="historia"><div class="container narrow reveal"><p class="eyebrow">UN AMOR PARA TODA LA VIDA</p><div class="ornament gold">❦</div><h2>El comienzo de nuestro <i>para siempre</i></h2><p class="quote">“De todos los caminos que pudimos recorrer, la vida nos llevó al mismo lugar: el uno al lado del otro. Hoy elegimos seguir caminando juntos, con amor, fe y la alegría de compartir este día contigo.”</p><p class="signature">Ricardo & Ana Lilia</p></div></section>
+    <section class="section family-section" id="familias" aria-labelledby="family-title">
+      <div class="container family-container reveal">
+        <div class="family-kicker"><span></span><span>CON LA BENDICIÓN DE NUESTRAS FAMILIAS</span><span></span></div>
+        <div class="family-monogram" aria-hidden="true">R <span>&amp;</span> A</div>
+        <h2 id="family-title">El amor que nos <i>acompaña</i></h2>
+        <p class="family-intro">Con gratitud y alegría, compartimos este día con quienes nos han acompañado con su amor y sus bendiciones.</p>
+        <div class="family-parents">
+          <article class="family-group">
+            <div class="family-branch" aria-hidden="true">❦</div>
+            <p class="family-label">PADRES DE LA NOVIA</p>
+            <h3>Felipa Segura</h3>
+            <span class="family-connector" aria-hidden="true">&amp;</span>
+            <h3>Rafael Rodríguez</h3>
+          </article>
+          <div class="family-center-divider" aria-hidden="true"><span>✧</span></div>
+          <article class="family-group">
+            <div class="family-branch" aria-hidden="true">❦</div>
+            <p class="family-label">PADRES DEL NOVIO</p>
+            <h3>Ma. Guadalupe Banda</h3>
+            <span class="family-connector" aria-hidden="true">&amp;</span>
+            <h3>J. Encarnación Mejía</h3>
+          </article>
+        </div>
+        <div class="family-velacion">
+          <div class="family-separator"><span>✦</span></div>
+          <p class="family-label">PADRINOS DE VELACIÓN</p>
+          <div class="family-sponsors"><span>Marivel Rodríguez</span><em>&amp;</em><span>Jhonatan Luna</span></div>
+        </div>
+        <p class="family-closing">Gracias por ser parte de nuestra historia.</p>
+      </div>
+    </section>
+    <section class="section countdown-section"><div class="container reveal"><p class="eyebrow">FALTA MUY POCO PARA NUESTRO GRAN DÍA</p><h2>Cuenta regresiva</h2><div class="countdown" id="countdown" role="timer" aria-label="Tiempo restante para la boda"><div><strong id="days">00</strong><span>Días</span></div><div><strong id="hours">00</strong><span>Horas</span></div><div><strong id="minutes">00</strong><span>Minutos</span></div><div><strong id="seconds">00</strong><span>Segundos</span></div></div><p class="countdown-done" id="countdownDone" hidden>¡Llegó nuestro gran día!</p></div></section>
+    <section class="section calendar-section"><div class="container narrow reveal"><p class="eyebrow">RESERVA ESTA FECHA</p><h2>Diciembre <i>2026</i></h2><div class="calendar" aria-label="Calendario diciembre 2026"><div class="calendar-week">L</div><div class="calendar-week">M</div><div class="calendar-week">M</div><div class="calendar-week">J</div><div class="calendar-week">V</div><div class="calendar-week">S</div><div class="calendar-week">D</div><div class="empty"></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div class="special" aria-label="19 de diciembre, día de la boda">19<span>♥</span></div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div></div><a class="button button-outline" id="calendarLink" target="_blank" rel="noopener noreferrer">Agregar a Google Calendar ↗</a></div></section>
+    <section class="section locations-section" id="lugares"><div class="container reveal"><p class="eyebrow">ACOMPÁÑANOS EN ESTE DÍA ESPECIAL</p><h2>Los momentos <i>más importantes</i></h2><div class="location-grid"><article class="location-card"><img class="location-photo location-photo-ceremony" src="img/ceremonia.jpg" alt="Interior de la iglesia, con altar, arcos ornamentados y arreglos florales" loading="lazy"><div class="location-card-body"><div class="location-icon">✧</div><p class="eyebrow">CEREMONIA RELIGIOSA</p><h3>Parroquia de San Diego de Alcalá</h3><p>Jaral de Berrios</p><p class="location-time">1:00 p. m.</p><a class="button" href="https://maps.app.goo.gl/ek3djqmFRF5bdZSM9?g_st=iw" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a></div></article><article class="location-card"><img class="location-photo location-photo-reception" src="img/recepcion.jpg" alt="Mesa de celebración elegante con velas, flores blancas y detalles beige y dorados" loading="lazy"><div class="location-card-body"><div class="location-icon">❦</div><p class="eyebrow">RECEPCIÓN</p><h3>Hacienda San Bartolo de Berrio</h3><p>Celebración y convivencia</p><p class="location-time">A partir de las 3:00 p. m.</p><a class="button" href="https://maps.app.goo.gl/bqwx4NW4q3htASjE7?g_st=iw" target="_blank" rel="noopener noreferrer">Cómo llegar ↗</a></div></article></div></div></section>
+    <section class="section gallery-section" id="galeria"><div class="container reveal"><p class="eyebrow">NUESTROS RECUERDOS</p><h2>Un poco de <i>nuestra historia</i></h2><p class="section-note">Pronto compartiremos nuestras fotografías favoritas.</p><div class="gallery"><button class="photo" data-photo="img/foto1.jpg" aria-label="Ampliar fotografía 1"><img src="img/foto1.jpg" alt="Fotografía de Ricardo y Ana Lilia 1" loading="lazy"><span class="photo-fallback">R & A <small>Fotografía 1</small></span></button><button class="photo" data-photo="img/foto2.jpg" aria-label="Ampliar fotografía 2"><img src="img/foto2.jpg" alt="Fotografía de Ricardo y Ana Lilia 2" loading="lazy"><span class="photo-fallback">R & A <small>Fotografía 2</small></span></button><button class="photo" data-photo="img/foto3.jpg" aria-label="Ampliar fotografía 3"><img src="img/foto3.jpg" alt="Fotografía de Ricardo y Ana Lilia 3" loading="lazy"><span class="photo-fallback">R & A <small>Fotografía 3</small></span></button><button class="photo" data-photo="img/foto4.jpg" aria-label="Ampliar fotografía 4"><img src="img/foto4.jpg" alt="Fotografía de Ricardo y Ana Lilia 4" loading="lazy"><span class="photo-fallback">R & A <small>Fotografía 4</small></span></button></div></div></section>
+    <section class="section gifts-section"><div class="container narrow reveal"><div class="ornament gold">✧</div><p class="eyebrow">MESA DE REGALOS</p><h2>Tu presencia es <i>nuestro mejor regalo</i></h2><p>Lo más importante para nosotros es compartir este día contigo. Los detalles de la mesa de regalos estarán disponibles próximamente.</p></div></section>
+    <footer class="footer"><div class="ornament">❦</div><h2>Ricardo <span>&</span> Ana Lilia</h2><p>19 · 12 · 2026</p><p class="footer-note">Con amor, esperamos compartir este día contigo.</p></footer>
+  </main>
+  <dialog id="photoDialog" class="photo-dialog" aria-label="Fotografía ampliada"><button id="closePhoto" aria-label="Cerrar fotografía" class="close-photo">×</button><img id="dialogImage" alt="Fotografía ampliada"></dialog>
+</body>
+</html>
